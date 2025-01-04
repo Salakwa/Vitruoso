@@ -1,12 +1,13 @@
-import { Album } from "../Models/Album"
+import { Album } from "../Models/Album.js"
 
 class Track {
 
-    constructor() {
-        this.name = "";
-        this.artists = [];
-        this.duration = "";
-        this.album = Album;
+    constructor(songName, songArtists, songID, songDuration, songsAlbum) {
+        this.name = songName;
+        this.artists = songArtists;
+        this.trackID = songID;
+        this.duration = songDuration;
+        this.album = songsAlbum;
     }
 
     printTrackDetails() {
@@ -16,6 +17,9 @@ class Track {
         console.log(`Duration: ${this.duration}`);
         console.log(`Album: ${this.album.name}`); // Assumes Album has a 'name' property
     } 
+    
+
+
 }
 
 

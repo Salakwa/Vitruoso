@@ -12,4 +12,4 @@ class Article extends Publication {
 
 }
 
-export { Admin }; // Export the Admin class for use in other files
+export { Article }; // Export the Admin class for use in other files
